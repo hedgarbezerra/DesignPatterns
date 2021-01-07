@@ -36,7 +36,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder\Builder.cs" />
+    <Compile Include="Builder\Builder1.cs" />
     <Compile Include="Builder\FacadeBuilder.cs" />
+    <Compile Include="Factory\Factory.cs" />
+    <Compile Include="Factory\InnerFactory.cs" />
+    <Compile Include="TestingClass.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -40,6 +40,7 @@ namespace DesignPatterns.Builder
         public PersonJobBuilder(Person person)
         {
             this.person = person;
+
         }
 
         public PersonJobBuilder At(string companyName)
@@ -87,24 +88,5 @@ namespace DesignPatterns.Builder
             return this;
         }
 
-    }
-
-    public class Demo
-    {
-        static void Main(string[] args)
-        {
-            var pb = new PersonBuilder();
-            Person person = pb
-              .Lives
-                .At("123 London Road")
-                .In("London")
-                .WithPostcode("SW12BC")
-              .Works
-                .At("Fabrikam")
-                .AsA("Engineer")
-                .Earning(123000);
-
-            WriteLine(person);
-        }
     }
 }
